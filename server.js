@@ -4,7 +4,7 @@ var app = express();
 
 var comments = [{author: 'Binh Phan', text: 'Hey there!'}];
 
-app.use('/', express.static(__dirname));
+app.use('/', express.static(__dirname+"/build"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
