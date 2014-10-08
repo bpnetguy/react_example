@@ -1,5 +1,5 @@
 /** @jsx React.DOM */
-
+var React = require("react");
 var converter = new Showdown.converter();
 
 var Comment = React.createClass({

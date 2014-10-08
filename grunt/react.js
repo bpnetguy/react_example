@@ -2,9 +2,9 @@ module.exports = {
   jsx: {
     files: [{
       expand: true,
-      cwd: 'public/js/src',
+      cwd: './source',
       src: ['**/*.jsx','**/*.js'],
-      dest: 'public/js/build',
+      dest: './build',
       ext: '.js'
     }]
   }

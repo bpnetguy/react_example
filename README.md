@@ -11,3 +11,7 @@ npm install bower -g
 npm install webpack-dev-server -g
 
 
+
+grunt webpack
+
+
