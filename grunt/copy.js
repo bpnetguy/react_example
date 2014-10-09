@@ -1,10 +1,14 @@
 var path = require('path');
 var webpack = require('webpack');
 module.exports = {
-  html: {
+  build: {
     files: [
-      //{expand: true, src: ['source/**/*.html'], dest: 'dist/'},
-      {src: ['source/index.html'], dest: 'dist/index.html'},
+      {expand: true, cwd: "source/", src: ['**'], dest: 'build/'},
     ]
   },
+  dist: { 
+    files: [
+      {src: ['source/index.html'], dest: 'dist/index.html'},
+    ]
+  }
 };

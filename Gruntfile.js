@@ -19,7 +19,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
 
-  grunt.registerTask('default', ['react', "copy:html", "webpack:build"]);
-  grunt.registerTask('build', ['webpack:build']);
+  grunt.registerTask('default', ['react', "copy:build", "webpack:build"]);
 
 };

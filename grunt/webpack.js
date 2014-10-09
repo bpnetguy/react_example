@@ -6,8 +6,14 @@ module.exports = {
     entry: {
         app: './build/index.js',
     },
+    loaders: [
+      {
+        test: /\.less$/,
+        loader: "style-loader!css-loader!less-loader"
+      }
+    ],
     output: {
-        path: path.join(__dirname,'../dist'),
+        path: path.join(__dirname,'../build'),
         filename: '[name]-bundle.js'
     },
     stats: {
