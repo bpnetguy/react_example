@@ -2,11 +2,12 @@ var path = require('path');
 var webpack = require('webpack');
 module.exports = {
   build: {
+    devtool:"source-map",
     entry: {
-        app: './source/index.js',
+        app: './build/index.js',
     },
     output: {
-        path: path.join(__dirname,'../build'),
+        path: path.join(__dirname,'../dist'),
         filename: '[name]-bundle.js'
     },
     stats: {
